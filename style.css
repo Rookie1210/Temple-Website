@@ -1,0 +1,616 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins', sans-serif;
+    overflow-x:hidden;
+    background:#FFF8E7;
+}
+
+/* ================= NAVBAR ================= */
+
+nav{
+
+    position:fixed;
+
+    top:0;
+
+    width:100%;
+
+    z-index:1000;
+}
+
+/* TOP BAR */
+
+.mantra-bar{
+
+    background:#D4AF37;
+
+    color:#7A1F1F;
+
+    text-align:center;
+
+    padding:12px;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    letter-spacing:1px;
+}
+.mantra-text{
+
+    font-size:18px;
+
+    font-weight:600;
+
+    color:#FFD700;
+}
+
+#audioBtn{
+
+    position:absolute;
+
+    right:30px;
+
+    background:none;
+
+    border:none;
+
+    font-size:24px;
+
+    cursor:pointer;
+
+    color:white;
+}
+
+/* MAIN NAV */
+
+.main-nav{
+
+    background:#7A1F1F;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 70px;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.logo img{
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+.logo-text h3{
+    margin:0;
+    font-size:18px;
+    line-height:1.1;
+    color:#FFD700;
+    font-family:'Cinzel', serif;
+}
+
+.logo-text span{
+    font-size:10px;
+    color:#FFF0C9;
+    letter-spacing:1px;
+}
+
+.main-nav ul{
+
+    list-style:none;
+
+    display:flex;
+
+    gap:35px;
+}
+
+.main-nav a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:17px;
+}
+
+.main-nav a:hover{
+
+    color:#FFD700;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+
+    height:100vh;
+
+    background:
+    linear-gradient(
+        rgba(255,248,231,0.88),
+        rgba(255,248,231,0.92)
+    ),
+    url('images/temple-hero.jpg');
+
+    background-size:cover;
+
+    background-position:center;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    color:#3A2A1A;
+}
+
+.hero-content{
+
+    max-width:900px;
+
+    padding:20px;
+}
+
+.mantra{
+
+    font-family:'Cinzel', serif;
+
+    font-size:28px;
+
+    color:#7A1F1F;
+
+    margin-bottom:25px;
+
+    font-weight:600;
+}
+
+.hero h1{
+
+    font-family:'Cinzel', serif;
+
+    font-size:72px;
+
+    color:#7A1F1F;
+
+    margin-bottom:20px;
+
+    line-height:1.2;
+}
+
+.hero h2{
+
+    font-size:30px;
+
+    color:#A66B00;
+
+    margin-bottom:25px;
+}
+
+.description{
+
+    font-size:22px;
+
+    line-height:1.8;
+
+    color:#4A3B2A;
+
+    margin-bottom:40px;
+}
+.logo{
+    text-decoration:none;
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+.logo:hover{
+    transform:scale(1.02);
+    transition:0.3s;
+}
+/* ================= BUTTONS ================= */
+
+.buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+}
+
+.btn{
+
+    text-decoration:none;
+
+    padding:15px 35px;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    transition:0.3s;
+}
+
+.primary-btn{
+
+    background:#D4AF37;
+
+    color:white;
+}
+
+.primary-btn:hover{
+
+    background:#B8941F;
+
+    transform:translateY(-3px);
+}
+
+.secondary-btn{
+
+    border:2px solid #7A1F1F;
+
+    color:#7A1F1F;
+}
+
+.secondary-btn:hover{
+
+    background:#7A1F1F;
+
+    color:white;
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:900px){
+
+    nav{
+
+        padding:20px;
+    }
+
+    nav ul{
+
+        display:none;
+    }
+
+    .hero h1{
+
+        font-size:45px;
+    }
+
+    .hero h2{
+
+        font-size:22px;
+    }
+
+    .description{
+
+        font-size:18px;
+    }
+
+    .mantra{
+
+        font-size:20px;
+    }
+}
+.nav-mantra{
+
+    color:#FFD700;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    letter-spacing:1px;
+
+    text-align:center;
+
+    flex:1;
+
+    margin:0 30px;
+}
+
+#audioBtn{
+
+    background:none;
+
+    border:none;
+
+    color:white;
+
+    font-size:24px;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+#audioBtn:hover{
+
+    transform:scale(1.15);
+}
+/* ================= FOOTER ================= */
+
+footer{
+
+    background:#7A1F1F;
+
+    color:white;
+
+    text-align:center;
+
+    padding:20px;
+
+    font-size:14px;
+
+    margin-top:50px;
+}
+/* ================= POOJA PAGE ================= */
+
+.pooja-page{
+
+    padding:180px 8% 100px;
+
+    background:#FFFDF6;
+
+    min-height:100vh;
+
+    text-align:center;
+}
+
+.pooja-page h1{
+
+    font-family:'Cinzel', serif;
+
+    color:#7A1F1F;
+
+    font-size:48px;
+
+    margin-bottom:15px;
+}
+
+.intro{
+
+    margin-top:25px;
+
+    color:#4A3B2A;
+
+    font-size:18px;
+}
+
+.timings-grid{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:40px;
+
+    margin-top:60px;
+
+    flex-wrap:wrap;
+}
+
+.timing-card{
+
+    background:white;
+
+    width:400px;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+
+    border-top:5px solid #D4AF37;
+
+    text-align:left;
+}
+
+.timing-card h2{
+
+    color:#7A1F1F;
+
+    margin-bottom:20px;
+}
+
+.timing-card p{
+
+    margin:15px 0;
+
+    color:#4A3B2A;
+
+    font-size:17px;
+}
+.daily-poojas,
+.special-poojas,
+.festivals,
+.benefits,
+.guidelines{
+
+    padding:80px 8%;
+
+    text-align:center;
+
+    background:#FFFDF6;
+}
+
+.daily-poojas h2,
+.special-poojas h2,
+.festivals h2,
+.benefits h2,
+.guidelines h2{
+
+    font-family:'Cinzel', serif;
+
+    color:#7A1F1F;
+
+    font-size:38px;
+
+    margin-bottom:15px;
+}
+
+.pooja-grid,
+.festival-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2, 1fr);
+
+    gap:30px;
+
+    margin-top:40px;
+}
+@media(max-width:768px){
+
+    .festival-grid{
+
+        grid-template-columns:1fr;
+    }
+
+}
+
+.pooja-card,
+.festival-card{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:18px;
+
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+
+    border-top:4px solid #D4AF37;
+
+    transition:0.3s;
+
+    text-align:left;
+}
+
+.festival-card:hover{
+
+    transform:translateY(-8px);
+}
+
+.festival-card h3{
+
+    color:#7A1F1F;
+
+    margin-bottom:15px;
+}
+
+.festival-card p{
+
+    line-height:1.8;
+
+    color:#4A3B2A;
+
+    margin-bottom:10px;
+}
+.pooja-card:hover,
+.festival-card:hover,
+.benefit-card:hover{
+
+    transform:translateY(-8px);
+}
+
+.pooja-card h3,
+.festival-card h3,
+.benefit-card h3{
+
+    color:#7A1F1F;
+
+    margin-bottom:15px;
+}
+
+.guidelines ul{
+
+    max-width:800px;
+
+    margin:40px auto;
+
+    text-align:left;
+
+    line-height:2;
+
+    color:#4A3B2A;
+
+    font-size:18px;
+}
+.benefits-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2, 1fr);
+
+    gap:30px;
+
+    margin-top:40px;
+}
+
+.benefit-card{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:18px;
+
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+
+    border-top:4px solid #D4AF37;
+
+    transition:0.3s;
+
+    text-align:left;
+}
+
+.benefit-card:hover{
+
+    transform:translateY(-8px);
+}
+
+.benefit-card h3{
+
+    color:#7A1F1F;
+
+    margin-bottom:15px;
+}
+
+.benefit-card p{
+
+    color:#4A3B2A;
+
+    line-height:1.8;
+}
+@media(max-width:768px){
+
+    .benefits-grid{
+
+        grid-template-columns:1fr;
+    }
+
+}
