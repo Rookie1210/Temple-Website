@@ -2180,3 +2180,669 @@ body::before{
 
     mix-blend-mode:multiply;
 }
+nav{
+
+    position:fixed;
+
+    top:0;
+
+    width:100%;
+
+    z-index:1000;
+
+    transition:transform 0.35s ease;
+}
+/* ===================================================
+   MOBILE OPTIMIZATION FOR siddhidhatrishyamaladevi.org
+=================================================== */
+
+
+html,
+body{
+
+    width:100%;
+
+    overflow-x:hidden;
+}
+
+img,
+video{
+
+    max-width:100%;
+
+    height:auto;
+}
+
+/* Tablet & Mobile */
+
+@media(max-width:900px){
+
+    /* NAVBAR */
+
+    .main-nav{
+
+        flex-direction:column;
+
+        padding:15px;
+    }
+
+    .main-nav ul{
+
+        display:flex;
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+
+        gap:15px;
+
+        margin-top:15px;
+    }
+
+    .main-nav a{
+
+        font-size:14px;
+    }
+
+    /* TIMELINE */
+
+    .timeline{
+
+        grid-template-columns:1fr;
+    }
+
+    .timeline-item{
+
+        padding:20px;
+    }
+
+    /* DONATION */
+
+    .info-grid{
+
+        grid-template-columns:1fr;
+    }
+
+    .donation-details-section{
+
+        grid-template-columns:1fr;
+    }
+
+    .bank-layout{
+
+        flex-direction:column;
+
+        align-items:center;
+
+        text-align:center;
+    }
+
+    .bank-details{
+
+        width:100%;
+    }
+
+    .qr-side{
+
+        min-width:auto;
+    }
+
+    /* CONTACT */
+
+    .contact-info-section{
+
+        grid-template-columns:1fr;
+    }
+
+    /* GALLERY */
+
+    .gallery-grid{
+
+        grid-template-columns:1fr;
+    }
+
+    /* FESTIVALS */
+
+    .festival-grid{
+
+        grid-template-columns:1fr;
+    }
+
+    /* BENEFITS */
+
+    .benefits-grid{
+
+        grid-template-columns:1fr;
+    }
+
+    /* SPECIAL POOJA */
+
+    .special-pooja-timings{
+
+        grid-template-columns:1fr;
+    }
+}
+
+/* Small Mobile Devices */
+
+@media(max-width:768px){
+
+    /* HERO */
+
+    .hero{
+
+        padding:120px 20px 60px;
+
+        min-height:100vh;
+    }
+
+    .hero h1{
+
+        font-size:34px;
+
+        line-height:1.3;
+    }
+
+    .hero h2{
+
+        font-size:20px;
+    }
+
+    .description{
+
+        font-size:16px;
+
+        line-height:1.7;
+    }
+
+    .mantra{
+
+        font-size:18px;
+    }
+
+    /* BUTTONS */
+
+    .buttons{
+
+        flex-direction:column;
+
+        align-items:center;
+    }
+
+    .btn{
+
+        width:100%;
+
+        max-width:280px;
+    }
+
+    /* PAGE HEADINGS */
+
+    .gallery-hero h1,
+    .contact-hero h1,
+    .donation-hero h1,
+    .pooja-page h1{
+
+        font-size:36px;
+    }
+
+    /* CARDS */
+
+    .contact-card,
+    .info-card,
+    .timing-card,
+    .pooja-card,
+    .festival-card,
+    .benefit-card{
+
+        padding:25px 20px;
+    }
+
+    /* TIMING CARD */
+
+    .timing-card{
+
+        width:100%;
+    }
+
+    /* GALLERY IMAGES */
+
+    .gallery-item img{
+
+        height:260px;
+    }
+
+    /* SARASWATI IMAGE */
+
+    .featured-gallery-item img{
+
+        max-height:300px;
+    }
+
+    /* VIDEO */
+
+    .video-card{
+
+        border-radius:20px;
+
+        margin:40px auto;
+    }
+
+    .video-card video{
+
+        max-height:250px;
+    }
+
+    /* MAP */
+
+    .map-container iframe{
+
+        height:300px;
+    }
+
+    /* WATERMARK */
+
+    body::before{
+
+        width:320px;
+
+        height:320px;
+
+        top:60%;
+
+        opacity:0.04;
+    }
+
+    /* WHATSAPP FLOATING BUTTON */
+
+    .floating-whatsapp{
+
+        width:55px;
+
+        height:55px;
+
+        right:15px;
+
+        bottom:15px;
+    }
+
+    .floating-whatsapp img{
+
+        width:30px;
+
+        height:30px;
+    }
+
+    /* TOUCH TARGETS */
+
+    a,
+    button{
+
+        min-height:44px;
+    }
+}
+
+/* Very Small Phones */
+
+@media(max-width:480px){
+
+    .hero h1{
+
+        font-size:28px;
+    }
+
+    .hero h2{
+
+        font-size:18px;
+    }
+
+    .description{
+
+        font-size:15px;
+    }
+
+    .main-nav{
+
+        padding:10px;
+    }
+
+    .main-nav ul{
+
+        gap:10px;
+    }
+
+    .main-nav a{
+
+        font-size:13px;
+    }
+
+    .mantra-bar{
+
+        font-size:14px;
+
+        padding:10px;
+    }
+
+    body::before{
+
+        width:260px;
+
+        height:260px;
+    }
+}
+/* ==========================================
+   FINAL MOBILE FIXES FOR TEMPLE WEBSITE
+
+========================================== */
+
+nav{
+
+    transition:transform 0.35s ease;
+}
+
+/* MOBILE & TABLET */
+
+@media(max-width:900px){
+
+    /* NAVBAR */
+
+    .main-nav{
+
+        flex-direction:column;
+
+        padding:15px;
+    }
+
+    .main-nav ul{
+
+        display:flex !important;
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+
+        gap:12px;
+
+        margin-top:12px;
+    }
+
+    .main-nav a{
+
+        font-size:14px;
+    }
+
+    /* PAGE SPACING BELOW FIXED NAVBAR */
+
+    .about-section,
+    .pooja-page,
+    .gallery-hero,
+    .contact-hero,
+    .donation-hero{
+
+        padding-top:260px !important;
+    }
+
+    /* TIMELINE */
+
+    .timeline{
+
+        grid-template-columns:1fr;
+    }
+
+    /* DISCOVERY GALLERY */
+
+    .discovery-grid{
+
+        grid-template-columns:1fr;
+    }
+
+    /* GALLERY */
+
+    .gallery-grid{
+
+        grid-template-columns:1fr;
+    }
+
+    /* CONTACT */
+
+    .contact-info-section{
+
+        grid-template-columns:1fr;
+    }
+
+    /* DONATION */
+
+    .info-grid{
+
+        grid-template-columns:1fr;
+    }
+
+    .donation-details-section{
+
+        grid-template-columns:1fr;
+    }
+
+    /* FESTIVALS */
+
+    .festival-grid{
+
+        grid-template-columns:1fr;
+    }
+
+    /* BENEFITS */
+
+    .benefits-grid{
+
+        grid-template-columns:1fr;
+    }
+
+    /* FRIDAY POOJA */
+
+    .special-pooja-timings{
+
+        grid-template-columns:1fr;
+    }
+
+    /* QR SECTION */
+
+    .bank-layout{
+
+        flex-direction:column;
+
+        align-items:center;
+
+        text-align:center;
+    }
+
+    .bank-details{
+
+        width:100%;
+    }
+
+    .qr-side{
+
+        min-width:auto;
+    }
+}
+
+/* SMALL PHONES */
+
+@media(max-width:768px){
+
+    .hero{
+
+        min-height:100vh;
+
+        padding:140px 20px 80px;
+    }
+
+    .hero h1{
+
+        font-size:34px;
+    }
+
+    .hero h2{
+
+        font-size:20px;
+    }
+
+    .description{
+
+        font-size:16px;
+
+        line-height:1.7;
+    }
+
+    .mantra{
+
+        font-size:18px;
+    }
+
+    /* BUTTONS */
+
+    .buttons{
+
+        flex-direction:column;
+
+        align-items:center;
+    }
+
+    .btn{
+
+        width:100%;
+
+        max-width:280px;
+    }
+
+    /* PAGE HEADINGS */
+
+    .gallery-hero h1,
+    .contact-hero h1,
+    .donation-hero h1,
+    .pooja-page h1{
+
+        font-size:36px;
+    }
+
+    /* CARDS */
+
+    .contact-card,
+    .info-card,
+    .timing-card,
+    .pooja-card,
+    .festival-card,
+    .benefit-card{
+
+        padding:25px 20px;
+    }
+
+    .timing-card{
+
+        width:100%;
+    }
+
+    /* GALLERY */
+
+    .gallery-item img{
+
+        height:260px;
+    }
+
+    .featured-gallery-item img{
+
+        max-height:300px;
+    }
+
+    /* VIDEO */
+
+    .video-card{
+
+        border-radius:20px;
+
+        margin:40px auto;
+    }
+
+    .video-card video{
+
+        max-height:250px;
+    }
+
+    /* MAP */
+
+    .map-container iframe{
+
+        height:300px;
+    }
+
+    /* WATERMARK */
+
+    body::before{
+
+        width:320px;
+
+        height:320px;
+
+        top:60%;
+
+        opacity:0.04;
+    }
+
+    /* FLOATING WHATSAPP */
+
+    .floating-whatsapp{
+
+        width:55px;
+
+        height:55px;
+
+        right:15px;
+
+        bottom:15px;
+    }
+
+    .floating-whatsapp img{
+
+        width:30px;
+
+        height:30px;
+    }
+}
+
+/* VERY SMALL DEVICES */
+
+@media(max-width:480px){
+
+    .hero h1{
+
+        font-size:28px;
+    }
+
+    .hero h2{
+
+        font-size:18px;
+    }
+
+    .description{
+
+        font-size:15px;
+    }
+
+    .main-nav a{
+
+        font-size:13px;
+    }
+
+    .mantra-bar{
+
+        font-size:14px;
+
+        padding:10px;
+    }
+
+    body::before{
+
+        width:250px;
+
+        height:250px;
+    }
+}

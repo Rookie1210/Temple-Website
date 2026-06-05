@@ -15,7 +15,7 @@ Shri Siddhi Dhatri Shyamala Devi Temple | Nallagandla, Hyderabad
 content="Official website of Shri Siddhi Dhatri Shyamala Devi Temple, Nallagandla, Hyderabad. Explore temple history, poojas, festivals, darshan timings, donations, and spiritual events.">
 
 <meta name="keywords"
-content="Shyamala Devi Temple, Siddhi Dhatri Shyamala Devi, Nallagandla Temple, Hyderabad Temple, Friday Pooja, Kumkumarchana, Navaratri, Shyamala Navaratri">
+content="Shyamala Devi Temple, Siddhi Dhatri Shyamala Devi, Nallagandla Temple, Hyderabad Temple, Friday Pooja, Kumkumarchana, Navaratri, Shyamala Navaratri, Temple History, Temple Discovery, Temple Establishment, Spiritual Center, Devotee Community, Temple Timeline, Temple Gallery, Divine Idol Discovery, Temple Worship, Temple Festivals">
 
 <meta name="author"
 content="Shri Siddhi Dhatri Shyamala Devi Temple">
@@ -32,7 +32,7 @@ content="Shri Siddhi Dhatri Shyamala Devi Temple">
 
    <a href="#home" class="logo">
 
-    <img src="images/logo.png" alt="Temple Logo">
+    <img src="images/Ammavaru.jpeg" alt="Temple Logo">
 
     <div class="logo-text">
         <h3>Shri Siddhi Dhatri Shyamala Devi</h3>
@@ -65,7 +65,7 @@ content="Shri Siddhi Dhatri Shyamala Devi Temple">
 </h1>
 
 <h2>
-    Nallagandla • Hyderabad
+    Lakshmi Vihar Phase-1 • Nallagandla
 </h2>
 
 <p class="description">
@@ -104,5 +104,35 @@ content="Shri Siddhi Dhatri Shyamala Devi Temple">
     <img src="images/whatsapp.png" alt="WhatsApp">
 
 </a>
+<script>
+
+let lastScrollTop = 0;
+
+const navbar = document.querySelector("nav");
+
+window.addEventListener("scroll", function(){
+
+    let currentScroll = window.pageYOffset;
+
+    if(currentScroll > 100){
+
+        if(currentScroll > lastScrollTop){
+
+            navbar.style.transform = "translateY(-100%)";
+
+        }else{
+
+            navbar.style.transform = "translateY(0)";
+        }
+
+    }else{
+
+        navbar.style.transform = "translateY(0)";
+    }
+
+    lastScrollTop = currentScroll;
+});
+
+</script>
 </body>
 </html>

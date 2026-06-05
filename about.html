@@ -35,7 +35,7 @@ content="Shri Siddhi Dhatri Shyamala Devi Temple">
 
             <a href="index.html" class="logo">
 
-                <img src="images/logo.png" alt="Temple Logo">
+                <img src="images/Ammavaru.jpeg" alt="Temple Logo">
 
                 <div class="logo-text">
                     <h3>Shri Siddhi Dhatri Shyamala Devi</h3>
@@ -66,7 +66,7 @@ content="Shri Siddhi Dhatri Shyamala Devi Temple">
 
         <p>
 
-            Shri Siddhi Dhatri Shyamala Devi Temple is a sacred sanctuary located in the Nallagandla area of Hyderabad. The temple is dedicated to Goddess Siddhi Dhatri Shyamala Devi, a revered manifestation of the Divine Mother.
+            Shri Siddhi Dhatri Shyamala Devi Temple is a sacred sanctuary located in the Lakshmi Vihar Phase-1, Nallagandla area of Hyderabad. The temple is dedicated to Goddess Siddhi Dhatri Shyamala Devi, a revered manifestation of the Divine Mother.
         </p>
 
     </div>
@@ -223,6 +223,36 @@ content="Shri Siddhi Dhatri Shyamala Devi Temple">
     <img src="images/whatsapp.png" alt="WhatsApp">
 
 </a>
+<script>
+
+let lastScrollTop = 0;
+
+const navbar = document.querySelector("nav");
+
+window.addEventListener("scroll", function(){
+
+    let currentScroll = window.pageYOffset;
+
+    if(currentScroll > 100){
+
+        if(currentScroll > lastScrollTop){
+
+            navbar.style.transform = "translateY(-100%)";
+
+        }else{
+
+            navbar.style.transform = "translateY(0)";
+        }
+
+    }else{
+
+        navbar.style.transform = "translateY(0)";
+    }
+
+    lastScrollTop = currentScroll;
+});
+
+</script>
 </body>
 
 </html>
